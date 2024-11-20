@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Super Heroe</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="Descuentos">20% de descuento en todos los productos!</div>
+      <div class="logo-titulo">
+        <img src="./img/logo 1.svg" alt="" />
+        <h1>Nombre Tienda</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Contacto</a>
+          </li>
+          <li>
+            <a href="">Registrarme</a>
+          </li>
+          <li>
+            <a href="">Ingresar</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cajamadre">
+        <form action="">
+          <h2>Añadí tu super!</h2>
+          <p>Agregá tu personaje favorito completando las opciones.</p>
+
+          <div class="columnas">
+            <!-- Columna izquierda -->
+            <div class="colum">
+              <label for="Nombre">*Nombre</label>
+              <input id="Nombre" type="text" name="nombre" />
+              <label for="date">Fecha</label>
+              <input
+                id="date"
+                type="date"
+                name="fecha"
+                min="1980-01-01"
+                max="2022-12-31"
+              />
+              <!-- La etiqueta placeholder me permite poner un texto dentro de textarea -->
+              <textarea name="textarea" placeholder="Descripción"></textarea>
+            </div>
+            <!-- Columna derecha -->
+            <div class="colum">
+              <!-- Especie -->
+              <label for="Especie">*Especie</label>
+              <select id="Especie" name="Especie" required="">
+                <option value="" selected="" disabled="" hidden="">
+                  Especie
+                </option>
+                <option value="1">Humano</option>
+                <option value="2">Semi-humano</option>
+                <option value="3">Reptil</option>
+              </select>
+
+              <!-- Carga de documentos -->
+              <label for="doc">Agregar foto</label>
+              <input id="doc" type="file" />
+
+              <!-- Tipo de poderes -->
+              <label for="Poderes"
+                >Poderes
+                <div class="item">
+                  <label for="Poderes">Volar</label>
+                  <input id="Poderes" type="checkbox" name="1" value="Volar" />
+                </div>
+                <div class="item">
+                  <label for="Poderes">Superinteligencia</label>
+                  <input
+                    id="Poderes"
+                    type="checkbox"
+                    name="1"
+                    value="Inteligencia"
+                  />
+                </div>
+                <div class="item">
+                  <label for="Poderes">Vista de rayo láser</label>
+                  <input id="Poderes" type="checkbox" name="1" value="laser" />
+                </div>
+                <div class="item">
+                  <label for="Poderes">Billetera gorda</label>
+                  <input
+                    id="Poderes"
+                    type="checkbox"
+                    name="1"
+                    value="adinerado"
+                  />
+                </div>
+              </label>
+
+              <hr />
+
+              <!-- Tipo de personaje -->
+              <label for="personaje"
+                >Tipo de personaje
+                <div class="item">
+                  <label for="personaje">Héroe / Heroina</label>
+                  <input
+                    id="personaje"
+                    type="radio"
+                    name="1"
+                    value="Héroe / Heroina"
+                  />
+                </div>
+                <div class="item">
+                  <label for="personaje">Villano / Villana</label>
+                  <input
+                    id="personaje"
+                    type="radio"
+                    name="1"
+                    value="Villano / Villana"
+                  />
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <button>Añadir</button>
+        </form>
+      </section>
+    </main>
+    <footer>Todos los derechos resevados</footer>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+/*  carga fuentes externas de Google Fonts, permitiendo utilizar las fuentes "Combo" y "Roboto" en la página.*/
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Roboto&display=swap");
+
+/* Aplica la fuente "Roboto" a todo el contenido de la página y elimina los márgenes por defecto del cuerpo. */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+/*Elimina el estilo de viñetas en las listas.*/
+ul {
+  list-style: none;
+}
+/*Quita el subrayado de los enlaces y establece el color de fondo cuando se pasa el cursor sobre ellos.*/
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+}
+
+a:hover {
+  background-color: #2c4e61;
+}
+/*Cambia el color de fondo y el color de texto del pie de página, centra el texto y agrega relleno.*/
+footer {
+  background-color: #00669f;
+  color: #fff9f9;
+  padding: 16px;
+  text-align: center;
+}
+/*Fondo de color verde y tamaño de fuente ajustado.*/
+header .Descuentos {
+  background-color: #1cd1b0;
+  padding: 10px;
+  /* Tamaño del bloque */
+  font-size: 15px;
+  /* tamaño de letra */
+}
+/*Fondo de color azul, visualización en "flex" para centrar el contenido.*/
+header .logo-titulo {
+  background-color: #00669f;
+  display: flex;
+  padding: 2px 16px;
+  align-items: center;
+}
+/* Color de texto blanco, fuente mediana y margen a la izquierda.*/
+header h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 20px;
+}
+/*Fondo azul oscuro, color blanco y los elementos de la lista se alinean a la derecha.*/
+header nav {
+  background-color: #001d2d;
+  color: #fff;
+}
+
+header nav ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+}
+
+header nav a {
+  padding: 11px;
+}
+
+.cards {
+  margin: 150px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+article.card {
+  width: 300px;
+  /* Ancho del bloque */
+}
+
+img.img-like {
+  /* Posicion obsoluta para que el espacio que 
+    esta ocupando quede libre */
+  position: absolute;
+  top: 15px;
+  left: 21px;
+}
+
+img.img-perfil {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* Esto me va a permitir que las tarjetas
+Se muevan dentro del contenedor y nunca afuera */
+.card-header {
+  position: relative;
+}
+
+.card-body {
+  text-align: center;
+  padding: 18px;
+  background-color: #f3f3f3;
+}
+
+.card-body h2 {
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+.card-body p {
+  text-align: left;
+}
+
+.card-body a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #00669f;
+  color: white;
+  text-decoration: none;
+}
+
+.cajaboton {
+  background-color: #00669f;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f3f3f3;
+}
+
+.fix {
+  position: fixed;
+  top: calc(50vh - 25px);
+  right: 20px;
+}
+
+/* Formulario */
+
+.cajamadre {
+  display: flex;
+  justify-content: center;
+  margin: 40px 20px;
+}
+
+.columnas {
+  display: flex;
+  gap: 33px;
+  justify-content: center;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #00669f;
+  padding: 28px 20px;
+  border-radius: 50px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  max-width: 954px;
+}
+
+form h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+}
+
+form p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.colum {
+  flex: 1;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border-radius: 15px;
+  height: 63px;
+  padding: 10px;
+}
+
+select {
+  border-radius: 15px;
+  height: 63px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+textarea {
+  border-radius: 15px;
+  height: 350px;
+  resize: none;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+form hr {
+  width: 400px;
+  height: 1px;
+  border-width: 100;
+  color: #ccc;
+  background-color: #ccc;
+}
+
+form .item {
+  display: flex;
+  align-items: center;
+  margin: 13px 0;
+}
+
+form .item label {
+  margin: 0;
+  margin-left: 7px;
+}
+
+form #Especie {
+  padding-left: 0;
+  font-size: 20px;
+}
+
+form #Poderes {
+  width: 24px;
+  height: 20px;
+}
+
+form #personaje {
+  width: 20px;
+  height: 20px;
+}
+
+form button {
+  width: 100%;
+  height: 90px;
+  font-size: 40px;
+  font-weight: 700;
+  border-radius: 23px;
+  margin: 20px 0 18px 0;
+  max-width: 466px;
+  background: #1cd1b0;
+  border: none;
+}
+
+form button:hover {
+  background-color: #05332b;
+  cursor: pointer;
+}
+/*Cambia el diseño a una sola columna en pantallas pequeñas para una mejor visualización en dispositivos móviles.*/
+@media (max-width: 850px) {
+  .columnas {
+    flex-direction: column;
+    width: 100%;
+  }
+}
